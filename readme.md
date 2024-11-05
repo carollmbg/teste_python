@@ -21,9 +21,12 @@ Este projeto é uma aplicação simples desenvolvida em Flask que exibe uma tabe
    cd teste_git_python
 
 2.Crie e ative um ambiente virtual:
+
     python -m venv venv
-    'source venv/bin/activate'
-    # No Windows, use `venv\Scripts\activate`
+    
+    'source venv/bin/activate
+    
+    # No Windows, `venv\Scripts\activate`
 
 3.Instale as dependências:
     pip install flask pandas
