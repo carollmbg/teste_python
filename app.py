@@ -23,5 +23,9 @@ df = pd.DataFrame({
 # RENDERIZE OS VALORES DO DATAFRAME df EM UMA TABELA HTML DENTRO DA PÁGINA /table.html (CRIE UM HTML PARA ISSO)
 @app.route('/table')
 def table():
+    # Converte o DataFrame em uma tabela HTML
+    table_html = df.to_html(classes='data', header="true", index=False)
+    return render_template('table.html', table=table_html)
 
-    return render_template('table.html', )
+if __name__ == '__main__':
+    app.run(debug=True)
